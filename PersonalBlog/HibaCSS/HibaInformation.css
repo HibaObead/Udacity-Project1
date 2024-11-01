@@ -1,0 +1,86 @@
+@import url("HibaBlog.css");
+@import url("HibaMain.css");
+
+/* Card Container */
+.HibaSamicard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent;
+    margin: 100px 0px;
+}
+
+/* Card Styling */
+.HibaSamicard {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.HibaSamicard:hover {
+    transform: translateY(-10px);
+}
+
+/* Card Image */
+.HibaSamicard-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Card Content */
+.HibaSamicard-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.HibaSamicard-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.HibaSamicard-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.HibaSamicard-btn {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 200px;
+    align-items: center;
+    margin-left: 180px;
+}
+
+.HibaSamicard-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .HibaSamicard {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .HibaSamicard {
+        width: 100%;
+    }
+}
